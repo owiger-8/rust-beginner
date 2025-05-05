@@ -34,12 +34,12 @@ fn main() {
 
     // checking the choices using if else 
     if choice.trim() == "1" {
-        // Formula: (F - 32) * 5/9
+       
         let result = (temp - 32.0) * 5.0 / 9.0;
-        // {:.2} formats the number to 2 decimal places
+    
         println!("{:.2}°F is {:.2}°C", temp, result);
     } else if choice.trim() == "2" {
-        // Formula: (C * 9/5) + 32
+
         let result = (temp * 9.0 / 5.0) + 32.0;
         println!("{:.2}°C is {:.2}°F", temp, result);
     } else {
