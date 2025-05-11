@@ -7,9 +7,9 @@ fn main() {
         .except("Couldn't read ");
 
     if ispal(&input) {
-        println("palindrome");
+        println!("palindrome");
     }else {
-        println("Not palindrome");
+        println!("Not palindrome");
     }
 }
 fn ispal( t : &str) -> bool {
