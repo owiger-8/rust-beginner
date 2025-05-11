@@ -4,9 +4,9 @@ fn main() {
     let mut s = String::new();
     io::stdin()
         .read_line(&mut s)
-        .except("Couldn't read ");
+        .expect("Couldn't read ");
 
-    if ispal(&input) {
+    if ispal(&s) {
         println!("palindrome");
     }else {
         println!("Not palindrome");
@@ -21,5 +21,5 @@ fn ispal( t : &str) -> bool {
 
     let reversed : String = clean.chars().rev().collect();
 
-    cleaned == reversed
+    clean == reversed
 }
