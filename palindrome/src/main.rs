@@ -19,7 +19,7 @@ fn ispal( t : &str) -> bool {
     .map(|c| c.to_ascii_lowercase())
     .collect();
 
-    let reversed : String = cleaned.chars().rev().collect();
+    let reversed : String = clean.chars().rev().collect();
 
     cleaned == reversed
 }
