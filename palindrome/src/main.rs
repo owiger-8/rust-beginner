@@ -3,7 +3,7 @@ fn main() {
 
     let mut s = String::new();
     io::stdin()
-        .read_line(&mut s);
+        .read_line(&mut s)
         .except("Couldn't read ");
 
     if ispal(&input) {
