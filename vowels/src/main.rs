@@ -18,7 +18,7 @@ fn vowels ( sen : String) -> usize {
             'a' | 'e' | 'i' | 'o' | 'u'  => {
                 count += 1;
             }
-
+            _ => {} ,
         }
 
     }
