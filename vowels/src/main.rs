@@ -8,9 +8,9 @@ fn main() {
         .expect("no input");
 
     let count = vowels(&s);
-    println!( "Number of vowels {}" . count );
+    println!( "Number of vowels {}" , count );
 } 
-fn count ( sen : String) -> usize {
+fn vowels ( sen : String) -> usize {
     let mut count = 0 ;
 
     for c in sen.chars(){
