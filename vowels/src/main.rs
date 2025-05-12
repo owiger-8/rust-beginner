@@ -10,7 +10,7 @@ fn main() {
     let count = vowels(&s);
     println!( "Number of vowels {}" , count );
 } 
-fn vowels ( sen : String) -> usize {
+fn vowels ( sen : &String) -> usize {
     let mut count = 0 ;
 
     for c in sen.chars(){
